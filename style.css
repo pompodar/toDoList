@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 15px;
+}
+
+.toDos {
+    width: 200px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.toDos > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.toDos > div > p {
+   word-break: break-all;
+}
+
+.toDos > div > button {
+    height: fit-content;
+}
