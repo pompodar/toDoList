@@ -2,8 +2,8 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const toDos = document.querySelector(".toDos");
 
-const storedToDos = localStorage.getItem('toDos');
-const parsedToDos = JSON.parse(storedToDos);
+let storedToDos = localStorage.getItem('toDos');
+let parsedToDos = JSON.parse(storedToDos);
 
 let toDosArray = []; 
 
@@ -27,6 +27,9 @@ button.addEventListener("click", () => {
 addToDos();
 
 function addToDos() {
+    storedToDos = localStorage.getItem('toDos');
+    parsedToDos = JSON.parse(storedToDos);
+    
     if (storedToDos) {
         toDos.innerHTML = '';
 
