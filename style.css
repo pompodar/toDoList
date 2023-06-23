@@ -1,9 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     padding: 2rem;
@@ -28,6 +28,9 @@
     background-position: center;
     background-size: cover; 
     text-align: center;
+    padding: 15px;
+    overflow: scroll;
+    height: 100vh;
   }
   .wrapper input {
     outline: white;
@@ -80,3 +83,4 @@
   .toDos button:hover {
     background-color: aquamarine;
   }
+
