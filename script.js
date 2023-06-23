@@ -2,10 +2,16 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const toDos = document.querySelector(".toDos");
 
-let storedToDos = localStorage.getItem("toDos");
+const par = document.querySelector('.notice')
+
+
+let storedToDos = localStorage.getItem('toDos');
 let parsedToDos = JSON.parse(storedToDos);
 
-let toDosArray = [];
+
+
+let toDosArray = []; 
+
 
 if (storedToDos) {
   toDosArray = parsedToDos;
@@ -19,12 +25,17 @@ button.addEventListener("click", () => {
       alert("This task has already been recorded!");
       input.value = "";
     } else {
+
+        par.textContent = 'no task added';
+        par.style.display = "block";
+
       toDosArray.push(input.value);
       localStorage.setItem("toDos", JSON.stringify(toDosArray));
 
       addToDos();
 
       input.value = "";
+
     }
   }
 });

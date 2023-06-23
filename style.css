@@ -72,3 +72,8 @@
   .toDos div button {
     margin-left: 25px;
   }
+  
+  .notice {
+    display: none;
+  }
+
