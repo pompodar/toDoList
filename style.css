@@ -2,30 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.wrapper {
-    padding: 15px;
-}
-
-.toDos {
-    width: 200px;
-    margin-top: 15px;
+  }
+  body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    padding: 2rem;
+  }
+  p {
+    margin-block: 1rem;
+  }
+  button,
+  a {
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(20, 89, 129);
+  }
+  .wrapperList {
+    padding: 50px;
+    border-radius: 50px;
+    width: 50%;
+    background: url(https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+    background-size: cover;
+    
+    text-align: center;
+  }
+  .wrapperList input {
+    outline: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin-bottom: 1rem;
+    width: 75%;
+    height: 2rem;
+  }
+  .wrapperList > button {
+    margin-bottom: 1rem;
+    width: 20%;
+    height: 2rem;
+  }
+  .affairs {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 10px;
-}
-
-.toDos > div {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.toDos > div > p {
-   word-break: break-all;
-}
-
-.toDos > div > button {
-    height: fit-content;
-}
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .affairs div {
+    background-color: rgba(255, 251, 246, 0.438);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(250, 238, 250);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  
