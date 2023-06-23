@@ -2,7 +2,7 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const toDos = document.querySelector(".toDos");
 
-const par = document.querySelector('.notice')
+const par = document.querySelector('#notice')
 
 
 let storedToDos = localStorage.getItem('toDos');
