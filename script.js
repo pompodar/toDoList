@@ -2,8 +2,13 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const toDos = document.querySelector(".toDos");
 
+const par = document.querySelector('.notice')
+
+
 let storedToDos = localStorage.getItem('toDos');
 let parsedToDos = JSON.parse(storedToDos);
+
+
 
 let toDosArray = []; 
 
@@ -20,7 +25,8 @@ button.addEventListener("click", () => {
 
         input.value = "";
     } else {
-        alert("no task added");
+        par.textContent = 'no task added';
+        par.style.display = "block";
     }
 })
 
