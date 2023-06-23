@@ -12,64 +12,65 @@ let parsedToDos = JSON.parse(storedToDos);
 
 let toDosArray = []; 
 
+
 if (storedToDos) {
-    toDosArray = parsedToDos;
+  toDosArray = parsedToDos;
 }
 
 button.addEventListener("click", () => {
-    if (input.value != '') {
-        toDosArray.push(input.value);
-        localStorage.setItem('toDos', JSON.stringify(toDosArray));
+  if (input.value !== "") {
+    const isDuplicate = toDosArray.includes(input.value);
 
-        addToDos();
-
-        input.value = "";
+    if (isDuplicate) {
+      alert("This task has already been recorded!");
+      input.value = "";
     } else {
+
         par.textContent = 'no task added';
         par.style.display = "block";
+
+      toDosArray.push(input.value);
+      localStorage.setItem("toDos", JSON.stringify(toDosArray));
+
+      addToDos();
+
+      input.value = "";
+
     }
-})
+  }
+});
 
 addToDos();
 
 function addToDos() {
-    storedToDos = localStorage.getItem('toDos');
-    parsedToDos = JSON.parse(storedToDos);
-    
-    if (storedToDos) {
-        toDos.innerHTML = '';
+  storedToDos = localStorage.getItem("toDos");
+  parsedToDos = JSON.parse(storedToDos);
 
-        for (let index = 0; index < parsedToDos.length; index++) {
-            const container = document.createElement("div");
+  if (storedToDos) {
+    toDos.innerHTML = "";
 
-            const par = document.createElement("p");
-            par.textContent = parsedToDos[index];
-            container.appendChild(par);
-    
-            const button = document.createElement("button");
-            button.textContent = "delete";
-            button.setAttribute("data-index", index);
-            container.appendChild(button);
+    for (let index = 0; index < parsedToDos.length; index++) {
+      const container = document.createElement("div");
 
-            toDos.appendChild(container);
-    
-            button.addEventListener("click", function () {
-                const index = button.getAttribute("data-index");
-                toDosArray.splice(index, 1);
-    
-                localStorage.setItem("toDos", JSON.stringify(toDosArray));
-    
-                toDos.removeChild(container);
-            })
-        }
+      const par = document.createElement("p");
+      par.textContent = parsedToDos[index];
+      container.appendChild(par);
+
+      const button = document.createElement("button");
+      button.textContent = "delete";
+      button.setAttribute("data-index", index);
+      container.appendChild(button);
+
+      toDos.appendChild(container);
+
+      button.addEventListener("click", function () {
+        const index = button.getAttribute("data-index");
+        toDosArray.splice(index, 1);
+
+        localStorage.setItem("toDos", JSON.stringify(toDosArray));
+
+        toDos.removeChild(container);
+      });
     }
+  }
 }
-
-
-
-
-
-
-
-
-
