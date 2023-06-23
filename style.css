@@ -21,17 +21,16 @@
     color: white;
     background-color: rgb(20, 89, 129);
   }
-  .wrapperList {
+  .wrapper {
     padding: 50px;
     border-radius: 50px;
-    width: 50%;
+    width: 70%;
     background: url(https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover; 
     text-align: center;
   }
-  .wrapperList input {
+  .wrapper input {
     outline: white;
     border: none;
     border-radius: 15px;
@@ -40,12 +39,12 @@
     width: 75%;
     height: 2rem;
   }
-  .wrapperList > button {
+  .wrapper > button {
     margin-bottom: 1rem;
     width: 20%;
     height: 2rem;
   }
-  .affairs {
+  .toDos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -55,11 +54,10 @@
     text-align: center;
     margin: 0 auto;
   }
-  .affairs div {
+  .toDos div {
     background-color: rgba(255, 251, 246, 0.438);
     backdrop-filter: blur(5px);
     border: 1px solid rgb(250, 238, 250);
     border-radius: 10px;
     padding: 1rem;
   }
-  
