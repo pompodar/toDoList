@@ -29,8 +29,6 @@ a {
   background-size: cover;
   text-align: center;
   padding: 15px;
-  overflow: scroll;
-  height: 100vh;
 }
 .wrapper input {
   outline: white;
@@ -54,13 +52,16 @@ a {
 .toDos {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: column-reverse;
   align-items: center;
   gap: 1rem;
   padding-inline: 1rem;
   text-align: center;
   margin: 0 auto;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 .toDos div {
   background-color: rgba(255, 251, 246, 0.438);
