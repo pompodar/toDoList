@@ -6,7 +6,6 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding: 2rem;
 }
 p {
   margin-block: 1rem;
@@ -46,13 +45,12 @@ a {
 }
 
 .wrapper > button:hover {
-  background-color: aqua;
+  background-color: rgb(29, 110, 156);
 }
 
 .toDos {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
   flex-direction: column-reverse;
   align-items: center;
   gap: 1rem;
@@ -60,7 +58,7 @@ a {
   text-align: center;
   margin: 0 auto;
   height: 100vh;
-  overflow: scroll;
+  /* overflow: scroll; */
   overflow-x: hidden;
 }
 .toDos div {
@@ -82,7 +80,7 @@ a {
 }
 
 .toDos button:hover {
-  background-color: aquamarine;
+  background-color:  rgb(29, 110, 156);
 }
 
 body::-webkit-scrollbar {
