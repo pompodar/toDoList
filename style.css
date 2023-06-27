@@ -49,6 +49,7 @@ a {
 
 .wrapper > button:hover {
   background-color: rgb(29, 110, 156);
+  cursor: pointer;
 }
 
 .toDos {
@@ -62,7 +63,7 @@ a {
   margin: 0 auto;
   height: 100vh;
   /* overflow: scroll; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .toDos div {
   background-color: rgba(255, 251, 246, 0.438);
@@ -112,7 +113,8 @@ a {
 }
 
 .toDos button:hover {
-  background-color: rgb(29, 110, 156);
+  background-color:  rgb(29, 110, 156);
+  cursor: pointer;
 }
 
 body::-webkit-scrollbar {
