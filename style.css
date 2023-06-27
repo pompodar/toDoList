@@ -6,7 +6,7 @@
 body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
-    padding: 2rem;
+    
   }
   p {
     margin-block: 1rem;
@@ -63,7 +63,7 @@ body {
   margin: 0 auto;
   height: 100vh;
   /* overflow: scroll; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .toDos div {
   background-color: rgba(255, 251, 246, 0.438);
