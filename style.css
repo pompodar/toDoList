@@ -47,10 +47,36 @@ body {
     height: 2rem;
   }
 
-  .wrapper > button:hover {
-    background-color: aqua;
-  }
+.wrapper > button:hover {
+  background-color: rgb(29, 110, 156);
+}
 
+.toDos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  height: 100vh;
+  /* overflow: scroll; */
+  overflow-x: hidden;
+}
+.toDos div {
+  background-color: rgba(255, 251, 246, 0.438);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgb(250, 238, 250);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.toDos div p {
+  display: inline;
+}
   .toDos {
     display: flex;
     justify-content: center;
@@ -82,7 +108,20 @@ body {
     width: 290px;
   }
 
-  .toDos button:hover {
-    background-color: aquamarine;
-  }
+.toDos button:hover {
+  background-color:  rgb(29, 110, 156);
+}
 
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(20, 89, 129);
+  border-radius: 15px;
+}
