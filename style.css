@@ -103,14 +103,15 @@ a {
   width: 290px;
 }
 
-.toDos div p {
-  display: inline;
-}
-
-.toDos div button {
-  margin-left: 25px;
-  width: 290px;
-}
+  .toDos div p {
+    display: inline;
+  }
+  
+  .toDos div button {
+    margin-left: 25px;
+    width: 290px;
+    padding-inline: 20px;
+  }
 
 .toDos button:hover {
   background-color:  rgb(29, 110, 156);
