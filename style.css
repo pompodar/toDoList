@@ -49,6 +49,7 @@ body {
 
 .wrapper > button:hover {
   background-color: rgb(29, 110, 156);
+  cursor: pointer;
 }
 
 .toDos {
@@ -111,6 +112,7 @@ body {
 
 .toDos button:hover {
   background-color:  rgb(29, 110, 156);
+  cursor: pointer;
 }
 
 body::-webkit-scrollbar {
