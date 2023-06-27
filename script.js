@@ -2,10 +2,14 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const toDos = document.querySelector(".toDos");
 
+const notice = document.getElementById("notice");
+
 let storedToDos = localStorage.getItem("toDos");
 let parsedToDos = JSON.parse(storedToDos);
 
 let toDosArray = [];
+
+const noticeDurationMS = 2000;
 
 if (storedToDos) {
   toDosArray = parsedToDos;
@@ -16,7 +20,8 @@ button.addEventListener("click", () => {
     const isDuplicate = toDosArray.includes(input.value);
 
     if (isDuplicate) {
-      alert("This task has already been recorded!");
+      // alert("This task has already been recorded!");
+      showNotice("This task has already been recorded!");
       input.value = "";
     } else {
       toDosArray.push(input.value);
@@ -62,4 +67,11 @@ function addToDos() {
       });
     }
   }
+}
+
+function showNotice(msg) {
+  notice.innerText = msg;
+  setTimeout(() => {
+    notice.innerText = "";
+  }, noticeDurationMS);
 }
