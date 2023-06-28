@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  padding: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  /* padding: 2rem; */
 }
 p {
   margin-block: 1rem;
@@ -100,26 +100,27 @@ a {
   padding: 1rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 290px;
 }
 
-  .toDos div p {
-    display: inline;
-  }
-  
-  .toDos div button {
-    margin-left: 25px;
-    width: 290px;
-    padding-inline: 20px;
-  }
+.toDos div p {
+  display: inline;
+}
+
+.toDos div button {
+  margin-left: 25px;
+  /* width: 290px; */
+  padding-inline: 30px;
+}
 
 .toDos button:hover {
-  background-color:  rgb(29, 110, 156);
+  background-color: rgb(29, 110, 156);
   cursor: pointer;
 }
 
-body::-webkit-scrollbar {
-  width: 15px;
+/* body::-webkit-scrollbar {
+  width: 5px;
 }
 
 body::-webkit-scrollbar-track {
@@ -130,10 +131,11 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: rgb(20, 89, 129);
   border-radius: 15px;
-}
+} */
 
 .wrapper::-webkit-scrollbar {
   width: 7px;
+  height: 10px;
 }
 
 .toDos::-webkit-scrollbar-track {
@@ -144,4 +146,6 @@ body::-webkit-scrollbar-thumb {
 .wrapper::-webkit-scrollbar-thumb {
   background-color: rgb(20, 89, 129);
   border-radius: 15px;
+  
 }
+ 
